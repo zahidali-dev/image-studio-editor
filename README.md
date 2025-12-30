@@ -1,6 +1,6 @@
 # Image Studio – Web Image Editor
+<img width="960" height="440" alt="img" src="https://github.com/user-attachments/assets/c9c69c45-2c4b-4b9e-a847-731f716d8c5d" />
 
-![Image Studio Preview](./preview.png)
 
 🔗 **Live Demo:** https://zahidali-dev.github.io/image-studio-editor/
 
