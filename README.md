@@ -1,4 +1,6 @@
 # Image Studio – Web Image Editor
+![Uploading generated-image (18).png…]()
+
 
 Image Studio is a modern, browser‑based image editor built with **HTML, CSS and vanilla JavaScript**.  
 It focuses on a clean UI and real‑time filters, similar to lightweight versions of tools like Canva or mobile photo‑editing apps.
