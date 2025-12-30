@@ -1,6 +1,8 @@
 # Image Studio – Web Image Editor
-![Uploading generated-image (18).png…]()
 
+![Image Studio Preview](./preview.png)
+
+🔗 **Live Demo:** https://zahidali-dev.github.io/image-studio-editor/
 
 Image Studio is a modern, browser‑based image editor built with **HTML, CSS and vanilla JavaScript**.  
 It focuses on a clean UI and real‑time filters, similar to lightweight versions of tools like Canva or mobile photo‑editing apps.
@@ -53,17 +55,19 @@ No external frameworks or libraries are used.
 ## 🚀 Getting Started
 
 1. Clone the repository:
+https://github.com/zahidali-dev/image-studio-editor.git
 
 
-
-
-
-2. Open `index.html` in your browser (you can use the Live Server extension in VS Code).  
+2. Open `index.html` in your browser (or use the Live Server extension in VS Code).  
 3. Click **Choose Image**, adjust filters, try presets, then hit **Download** to save the edited image.
 
 ---
 
 ## 📂 Project Structure
+.
+├── index.html # Main layout and UI structure
+├── style.css # Styling, layout, glassmorphism theme
+└── script.js # Image filters, presets, canvas export logic
 
 
 ---
@@ -75,7 +79,17 @@ No external frameworks or libraries are used.
 - Undo / Redo history  
 - Before/After toggle  
 - Drag‑and‑drop image upload  
-- Mobile‑first fine‑tuning
+- Mobile‑first fine‑tuning  
+
+---
+
+## 📅 Project Info
+
+- **Initial release:** December 30, 2025  
+- **Author:** Zahid Ali (`zahidali-dev`)  
+
+This repository is intended for learning, portfolio, and showcasing skills.  
+If you plan to reuse or extend this project, please give proper credit by linking back to this repo and mentioning the original author.
 
 ---
 
