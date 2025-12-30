@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Image Studio — Editor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <div class="glass-card">
+      <!-- LEFT PILL PANEL -->
+      <aside class="side-panel">
+        <div class="brand">
+          <div class="brand-icon"></div>
+          <div class="brand-text">
+            <span class="brand-title">Image Studio</span>
+          </div>
+        </div>
+
+        <div class="btn-group">
+          <button id="chooseBtn" class="btn btn-green">Choose Image</button>
+          <input id="fileInput" type="file" accept="image/*" hidden />
+          <button id="resetBtn" class="btn btn-gray">Reset</button>
+          <button id="downloadBtn" class="btn btn-blue">Download</button>
+        </div>
+
+        <div class="preview-block">
+          <p class="preview-label">Preview</p>
+          <div class="preview-frame">
+            <img id="thumbPreview" alt="Preview" />
+          </div>
+        </div>
+      </aside>
+
+      <!-- MAIN EDITOR AREA -->
+      <main class="editor">
+        <header class="top-info">
+          <span id="zoomInfo">100%</span>
+        </header>
+
+        <section class="main-preview">
+          <div class="main-frame">
+            <img id="mainImage" alt="Main preview" />
+          </div>
+        </section>
+
+        <!-- SLIDERS -->
+        <section class="controls">
+          <div class="row">
+            <div class="control">
+              <span>Brightness</span>
+              <div class="slider-wrap">
+                <input id="brightness" type="range" min="0" max="200" value="100" />
+              </div>
+            </div>
+            <div class="control">
+              <span>Contrast</span>
+              <div class="slider-wrap">
+                <input id="contrast" type="range" min="0" max="200" value="100" />
+              </div>
+            </div>
+            <div class="control">
+              <span>Saturation</span>
+              <div class="slider-wrap">
+                <input id="saturation" type="range" min="0" max="200" value="100" />
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="control">
+              <span>Hue</span>
+              <div class="slider-wrap">
+                <input id="hue" type="range" min="-180" max="180" value="0" />
+              </div>
+            </div>
+            <div class="control">
+              <span>Blur</span>
+              <div class="slider-wrap">
+                <input id="blur" type="range" min="0" max="15" value="0" />
+              </div>
+            </div>
+            <div class="control">
+              <span>Opacity</span>
+              <div class="slider-wrap">
+                <input id="opacity" type="range" min="20" max="100" value="100" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- PRESETS -->
+        <section class="presets">
+          <button class="preset-btn preset-original" data-preset="original">
+            Original
+          </button>
+          <button class="preset-btn preset-warm" data-preset="warm">
+            Warm
+          </button>
+          <button class="preset-btn preset-cold" data-preset="cold">
+            Cold
+          </button>
+          <button class="preset-btn preset-dramatic" data-preset="dramatic">
+            Dramatic
+          </button>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <!-- Hidden canvas for download -->
+  <canvas id="hiddenCanvas" style="display:none;"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
